@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.product-section{
+    width: 60vw;
+    height: 100vh;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-section img{
+    width: 480px;
+}
