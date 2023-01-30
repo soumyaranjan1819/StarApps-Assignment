@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    font-family: 'Poppins';
+    background-color: #fffadf;
+}
+
 section.product-section{
     width: 60vw;
     height: 100vh;
-    border-right: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,4 +20,73 @@ section.product-section{
 
 .product-section img{
     width: 480px;
+}
+
+section.user-customization{
+width: 40vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.user-customization h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+/* .user-customization p{
+   
+} */
+.user-customization h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.user-customization .p2{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 0.5rem 0 1rem;
+}
+
+label.input-btn{
+    width:auto;
+    display: flex;
+    gap: 6rem;
+    /* background-color: #00c8ff; */
+    background-color: #ffcd05;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.input-btn p{
+    letter-spacing: 1.5px;
+}
+
+input[type='file']{
+    display: none;
+}
+
+.color-inputs{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.color-code{
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin: 1.5rem, 1rem;
+    cursor: pointer;
+}
+
+.yellow{
+    background-color: #ffcc00;
+}
+.pink{
+    background-color: #ff2d50;
+}
+.blue{
+    background-color: #0ea5e9;
 }
