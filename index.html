@@ -9,26 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
-
+    <script src="./index.js" defer ></script>
     <title>Umbrella Shop</title>
   </head>
   <body>
     <section class="product-section">
-      <img src="./assets/Yello umbrella.png" alt="Yello-Umbrella" />
+      <img src="./assets/Yello umbrella.png" alt="Yello-Umbrella" id="productImg" />
+      <img src="" id="displayLogo" alt="">
     </section>
     <section class="user-customization">
       <div>
@@ -65,8 +52,8 @@
               fill="#fff"
             ></path>
           </svg>
-          <p>UPLOAD LOGO</p>
-          <input type="file" name="file" id="logo-input" />
+          <p id="message">UPLOAD LOGO</p>
+          <input type="file" name="file" id="logo-input" accept="image/png, image/jpg" />
         </label>
       </div>
     </section>
