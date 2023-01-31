@@ -55,16 +55,20 @@ align-items: center;
     margin: 0.5rem 0 1rem;
 }
 
-label.input-btn{
+.input-btn{
     width:auto;
     display: flex;
     gap: 6rem;
-    /* background-color: #00c8ff; */
+    cursor: pointer;
+}
+
+.inputWrapper{
+    display: flex;
+    justify-content: space-between;
     background-color: #ffcd05;
     padding: 10px;
     font-weight: 600;
     color: white;
-    cursor: pointer;
 }
 
 .input-btn p{
@@ -72,6 +76,11 @@ label.input-btn{
 }
 
 input[type='file']{
+    display: none;
+}
+
+.deleteFile{
+    cursor: pointer;
     display: none;
 }
 

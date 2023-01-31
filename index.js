@@ -1,17 +1,24 @@
 const uploadBtn = document.querySelector('#logo-input')
-let bgClr = document.querySelector('body');
-let inputBtn = document.querySelector('.input-btn')
-let productImg = document.querySelector('#productImg')
+const bgClr = document.querySelector('body');
+const inputBtn = document.querySelector('.inputWrapper')
+const productImg = document.querySelector('#productImg')
+const logo = document.querySelector('#displayLogo')
+const fileName = document.querySelector('#fileName')
+const deleteButton = document.querySelector('.deleteFile')
 
 
 uploadBtn.addEventListener('change',()=>{
     const reader = new FileReader();
     reader.readAsDataURL(uploadBtn.files[0])
-
     reader.addEventListener('load',()=>{
-        document.querySelector('#message').innerHTML= uploadBtn.files[0].name;
-        document.querySelector('#displayLogo').setAttribute('src',reader.result)
+        logo.setAttribute('src',reader.result)
+        fileName.innerHTML= uploadBtn.files[0].name;
+        deleteButton.style.display='block'
     }) 
+})
+deleteButton.addEventListener('click',()=>{
+    fileName.innerHTML= 'UPLOAD LOGO';
+    deleteButton.style.display='none'
 })
 
 const colorPickers = document.querySelector('.color-inputs')
